@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <th>Numero</th>
+    <th>Data val.</th>
+    <th>Cód. segurança</th>
+    <th colspan="2">Nome</th>
+    <th colspan="2">Ações</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of cartoes">
+      <td>{{c.numero}}</td>
+      <td>{{c.validade}}</td>
+      <td>{{c.seguranca}}</td>
+      <td>{{c.id_pessoa.nome}}</td>
+      <td>{{c.id_pessoa.sobrenome}}</td>
+      <td><button [routerLink]="[ 'cadastro/', c.numero ]">Alterar</button></td>
+      <td><button (click)="excluirCartao(c.numero)">Excluir</button></td>
+    </tr>
+  </tbody>
+</table>

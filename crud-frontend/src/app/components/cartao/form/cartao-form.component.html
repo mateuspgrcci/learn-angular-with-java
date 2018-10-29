@@ -1,0 +1,24 @@
+<div>
+  <input type="text" [(ngModel)]="cartao.numero" placeholder="Numero">
+</div>
+<div>
+  <input type="text" [(ngModel)]="cartao.validade" placeholder="Data validade">
+</div>
+<div>
+  <input type="text" [(ngModel)]="cartao.seguranca" placeholder="Cod. segurança">
+</div>
+<div>
+  <input type="text" [(ngModel)]="cartao.id_pessoa.nome" placeholder="Nome">
+</div>
+<div>
+  <input type="text" [(ngModel)]="cartao.id_pessoa.sobrenome" placeholder="Sobrenome">
+</div>
+<div>
+  <input type="text" [(ngModel)]="cartao.id_pessoa.email" placeholder="Email">
+</div>
+<div>
+  <input type="text" [(ngModel)]="cartao.id_pessoa.cpf" placeholder="CPF">
+</div>
+<div>
+  <button (click)="salvarCartao(cartao)">Salvar</button>
+</div>
